@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../public/Banner.jpg";
+
 const Banner = () => {
   return (
     <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 ">
@@ -32,7 +32,7 @@ const Banner = () => {
       </div>
       <div className=" order -1 md:order-2 w-full md:w-1/2">
         <img
-          src={banner}
+          src={"Banner.jpg"}
           className="w-96 h-96 mt-12 md:mt-32 ml-20 rounded-3xl"
           alt=""
         />
