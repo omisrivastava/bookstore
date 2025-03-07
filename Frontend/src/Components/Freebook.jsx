@@ -11,19 +11,19 @@ const api_url = import.meta.env.VITE_REACT_API_URL;
 const Freebook = () => {
   const [book, setBook] = useState([]);
 
-  useEffect(() => {
-    const getbook = async () => {
-      try {
-        const res = await axios.get(api_url);
-        console.log(res.data);
-        const data = res.data.filter((data) => data.category === "Free");
-        setBook(data);
-      } catch (error) { // Pass error as parameter here
-        console.log(error);
-      }
-    };
-    getbook();
-  }, []);
+  // useEffect(() => {
+  //   const getbook = async () => {
+  //     try {
+  //       const res = await axios.get(api_url);
+  //       console.log(res.data);
+  //       const data = res.data.filter((data) => data.category === "Free");
+  //       setBook(data);
+  //     } catch (error) { // Pass error as parameter here
+  //       console.log(error);
+  //     }
+  //   };
+  //   getbook();
+  // }, []);
 
   var settings = {
     dots: true,
